@@ -1,12 +1,13 @@
 var express = require('express');
 var googlehome = require('./google-home-notifier');
+deviceAddress = '192.168.222.99';
 var ngrok = require('ngrok');
 var bodyParser = require('body-parser');
 var app = express();
-const serverPort = 8091; // default port
+const serverPort = 9009; // default port
 
 var deviceName = 'Google Home';
-var ip = '192.168.1.20'; // default IP
+var ip = '192.168.222.99'; // default IP
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
